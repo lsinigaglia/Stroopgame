@@ -107,7 +107,7 @@ while running:
                 display_feedback_rect((255, 0, 0))
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_l:
             correct = color == colors[words.index(word)]
-            if correct:
+            if not correct:
                 print("Correct")
                 display_feedback_rect((0, 255, 0))
             else:
